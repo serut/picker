@@ -28,7 +28,7 @@ function configurePackage(api) {
   }
   api.use(['lmieulet:meteor-coverage'], ['client','server']);
 
-  api.use(['webapp'], ['server']);
+  api.use(['webapp', 'underscore'], ['server']);
   api.addFiles([
     'lib/implementation.js',
     'lib/instance.js',
