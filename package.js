@@ -11,11 +11,11 @@ Npm.depends({
 
 Package.onUse(function(api) {
   configurePackage(api);
+  api.use(['lmieulet:meteor-coverage'], ['client','server']);
   api.export(['Picker']);
 });
 
 Package.onTest(function(api) {
-  api.use(['lmieulet:meteor-coverage'], ['client','server']);
   configurePackage(api);
   api.use(['tinytest', 'http', 'random'], ['server']);
   api.addFiles([
