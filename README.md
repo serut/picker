@@ -1,4 +1,5 @@
-[![](https://api.travis-ci.org/meteorhacks/picker.svg)](https://travis-ci.org/meteorhacks/picker)
+[![](https://api.travis-ci.org/serut/picker-coverage.svg)](https://travis-ci.org/serut/picker-coverage)
+[![Coverage Status](https://coveralls.io/repos/github/serut/picker-coverage/badge.svg?branch=master)](https://coveralls.io/github/serut/picker-coverage?branch=master)
 
 # Picker - Server Side Router for Meteor
 

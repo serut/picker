@@ -15,6 +15,7 @@ Package.onUse(function(api) {
 });
 
 Package.onTest(function(api) {
+  api.use(['lmieulet:meteor-coverage'], ['client','server']);
   configurePackage(api);
   api.use(['tinytest', 'http', 'random'], ['server']);
   api.addFiles([
