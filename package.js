@@ -11,7 +11,6 @@ Npm.depends({
 
 Package.onUse(function(api) {
   configurePackage(api);
-  api.use(['lmieulet:meteor-coverage'], ['client','server']);
   api.export(['Picker']);
 });
 
@@ -27,8 +26,9 @@ function configurePackage(api) {
   if(api.versionsFrom) {
     api.versionsFrom('METEOR@1.2');
   }
+  api.use(['lmieulet:meteor-coverage'], ['client','server']);
 
-  api.use(['webapp', 'underscore'], ['server']);
+  api.use(['webapp'], ['server']);
   api.addFiles([
     'lib/implementation.js',
     'lib/instance.js',
